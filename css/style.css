@@ -10,6 +10,11 @@ html {
 	box-sizing: border-box;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	font-size: 16px;
@@ -26,6 +31,12 @@ a {
 	color: inherit;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
 .container {
 	max-width: 1220px;
 	margin: 0 auto;
@@ -38,7 +49,11 @@ a {
 }
 
 .header-main {
-	/* background-color: transparent; */
+	background-color: transparent;
+	position: absolute;
+	z-index: 5;
+	left: 0;
+	right: 0;
 }
 
 .header__inner {
@@ -58,8 +73,48 @@ a {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-
 /*! Header Finish */
+
+/*! Main Start */
+.main {
+	flex-grow: 1;
+}
+
+.top {
+	position: absolute;
+	padding-top: 250px;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fff;
+}
+
+.title {
+	font-size: 96px;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+
+.top__link {
+	display: inline-block;
+	background-color: #151515;
+	padding: 24px;
+	max-width: 430px;
+	width: 100%;
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.swiper-wrapper {
+	background: rgba(21, 21, 21, 0.3);
+}
+
+.swiper-slide {
+	height: 100vh;
+}
+/*! Main Finish */
 
 /*! Footer Start */
 .footer {
@@ -93,3 +148,32 @@ a {
 	margin-bottom: 40px;
 }
 /*! Footer Finish */
+
+/*! App Start */
+.app {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-bottom: 50px;
+}
+/*! App Finish */
+
+/*! Footer copy Start */
+.footer__copy {
+	max-width: 800px;
+	margin: 0 auto 30px;
+	text-align: center;
+}
+
+.footer__copy-text {
+	font-size: 12px;
+}
+/*! Footer copy Finish */
+
+/*! Copy navigation Start*/
+.copy__nav-list {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+/*! Copy navigation Finish*/
