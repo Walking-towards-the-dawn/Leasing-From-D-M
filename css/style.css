@@ -54,7 +54,6 @@ a {
 .header {
 	background-color: #151515;
 }
-
 .header-main {
 	background-color: transparent;
 	position: absolute;
@@ -62,19 +61,16 @@ a {
 	left: 0;
 	right: 0;
 }
-
 .header__inner {
 	padding: 40px 0 45px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 }
-
 .menu__list {
 	display: flex;
 	gap: 35px;
 }
-
 .menu__list-link {
 	color: #fff;
 	text-transform: uppercase;
@@ -86,7 +82,6 @@ a {
 .main {
 	flex-grow: 1;
 }
-
 .top {
 	position: absolute;
 	margin-top: 250px;
@@ -96,13 +91,11 @@ a {
 	text-align: center;
 	color: #fff;
 }
-
 .title {
 	font-size: 96px;
 	font-weight: 700;
 	margin-bottom: 40px;
 }
-
 .top__link {
 	display: inline-block;
 	background-color: #151515;
@@ -113,14 +106,13 @@ a {
 	font-weight: 700;
 	text-transform: uppercase;
 }
-
+/*--------------------------------------------*/
 .swiper-slide {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom;
 	height: 100vh;
 }
-
 .swiper-slide::before {
 	content: '';
 	position: absolute;
@@ -131,15 +123,12 @@ a {
 	background-color: rgba(0, 0, 0, 0.4);
 	z-index: 1;
 }
-
 .swiper-pagination {
 	margin-bottom: 50px;
 }
-
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 15px;
 }
-
 .swiper-pagination-bullet {
 	width: 120px;
 	height: 3px;
@@ -147,31 +136,92 @@ a {
 	opacity: 0.8;
 	margin: 0 15px;
 }
-
 .swiper-pagination-bullet-active {
 	height: 4px;
 	background-color: #fff;
 }
-
+/*--------------------------------------------*/
 .why-leasing {
-	margin: 150px 0;
+	margin-top: 150px;
 }
-
 .why-leasing__list {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px;
 	text-align: center;
 }
-
 .why-leasing__item-title {
 	font-size: 24px;
 	font-weight: 700;
 	margin: 30px 0;
 }
-
 .why-leasing__item-text {
 	text-align: left;
+}
+/*--------------------------------------------*/
+.how-does-work {
+	margin-top: 150px;
+}
+.how-does-work__inner {
+	max-width: 600px;
+	margin: 0 auto;
+}
+.how-does-work__title {
+	margin-top: 50px;
+	font-size: 24px;
+	font-weight: 700;
+}
+/*--------------------------------------------*/
+.how-it-works__list {
+	padding-left: 70px;
+	margin: 50px 0 70px;
+	list-style: none;
+	counter-reset: myCounter;
+}
+.how-it-works__item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 510px;
+	gap: 140px;
+	counter-increment: myCounter;
+}
+.how-it-works__item + .how-it-works__item {
+	margin-top: 40px;
+}
+.how-it-works__item span::before {
+	content: counter(myCounter);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 48px;
+	font-weight: 700;
+	background-color: #06f;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	color: white;
+}
+/*--------------------------------------------*/
+.video {
+	margin-top: 150px;
+}
+.video__title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.video__text {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.video__content {
+	padding: 0 100px;
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	min-height: 500px;
 }
 /*! Main Finish */
 
