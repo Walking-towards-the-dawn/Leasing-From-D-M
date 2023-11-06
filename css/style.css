@@ -310,6 +310,41 @@ a {
 	margin: 0 auto;
 	padding: 12px 60px;
 }
+/*--------------------------------------------*/
+.articles {
+	margin: 150px 0;
+}
+.article__items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+.article__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.article__item-img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.article__item-title {
+	flex-basis: 446px;
+	font-size: 24px;
+	font-weight: 700;
+}
+.article__item-link {
+	color: #fff;
+	background-color: #06f;
+	padding: 4px 20px;
+}
+.article__btn {
+	display: inline-flex;
+	padding: 13px 61px;
+	justify-content: center;
+	align-items: center;
+}
 /*! Main Finish */
 
 /*! Footer Start */
