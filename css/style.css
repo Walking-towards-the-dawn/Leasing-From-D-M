@@ -343,7 +343,7 @@ a {
 	background-color: #06f;
 	padding: 4px 20px;
 }
-.articles__link {
+.show-more__link {
 	display: block;
 	text-transform: uppercase;
 	color: #fff;
@@ -352,6 +352,37 @@ a {
 	width: 225px;
 	text-align: center;
 	margin: 0 auto;
+}
+/*--------------------------------------------*/
+.choose-car {
+	margin-top: 100px;
+}
+.tabs__btn {
+	display: flex;
+	justify-content: center;
+	gap: 80px;
+	margin-bottom: 100px;
+}
+.tabs__btn-item {
+	font-family: 'Inter', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+.tabs__btn-item--active {
+	color: #0066ff;
+}
+.tabs__contant {
+	margin-bottom: 70px;
+}
+.tabs__contant-item {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	gap: 40px;
 }
 /*! Main Finish */
 
