@@ -376,6 +376,8 @@ a {
 	color: #0066ff;
 }
 .tabs__contant {
+	display: grid;
+	gap: 100px;
 	margin-bottom: 70px;
 }
 .tabs__contant-item {
