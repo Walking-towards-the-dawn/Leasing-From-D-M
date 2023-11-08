@@ -382,7 +382,33 @@ a {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: auto;
-	gap: 40px;
+	gap: 100px 40px;
+}
+.tabs__card {
+	max-width: 270px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+	border: 1px solid #0066ff;
+}
+.tabs__card-img {
+	display: block;
+	border-bottom: 1px solid #0066ff;
+	height: 170px;
+}
+.tabs__card-title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.tabs__card-price {
+	font-size: 24px;
+	font-weight: 700;
+}
+.tabs__card-link {
+	padding: 4px 0;
+	color: #0066ff;
+	border-top: 1px solid #0066ff;
 }
 /*! Main Finish */
 
