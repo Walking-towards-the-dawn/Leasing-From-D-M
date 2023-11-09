@@ -375,16 +375,16 @@ a {
 .tabs__btn-item--active {
 	color: #0066ff;
 }
-.tabs__contant {
-	display: grid;
-	gap: 100px;
+.tabs__content {
 	margin-bottom: 70px;
 }
-.tabs__contant-item {
-	display: grid;
+.tabs__content-item {
+	display: none;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: auto;
 	gap: 100px 40px;
+}
+.tabs__content-item.tabs__content-item--active {
+	display: grid;
 }
 .tabs__card {
 	max-width: 270px;
