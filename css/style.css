@@ -67,7 +67,23 @@ a {
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.menu__btn {
+.burger__btn {
+	width: 44px;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	display: none;
+}
+.burger__btn span {
+	border-radius: 6px;
+	height: 3px;
+	width: 100%;
+	background-color: #fff;
 }
 .menu__list {
 	display: flex;
@@ -90,7 +106,7 @@ a {
 .top {
 	position: absolute;
 	margin-top: 250px;
-	z-index: 5;
+	z-index: 3;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -437,7 +453,7 @@ a {
 }
 
 .footer__menu-list {
-	max-width: 225px;
+	width: 225px;
 }
 
 .footer__menu-item {
@@ -499,6 +515,35 @@ a {
 }
 
 @media (max-width: 860px) {
+	.swiper-pagination-bullet {
+		width: 100px;
+	}
+	.header__inner {
+		align-items: normal;
+	}
+	.burger__btn {
+		display: flex;
+		position: relative;
+		z-index: 6;
+	}
+	.menu__list {
+		position: absolute;
+		background-color: rgb(21 21 21 / 80%);
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		padding: 0 40px;
+		z-index: 5;
+		transform: translateX(100%);
+		transition: transform ease 0.6s;
+	}
+	.menu__list.menu__list--active {
+		transform: translateX(0%);
+		transition: transform ease 0.6s;
+	}
 	.why-leasing__list {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 40px 0;
@@ -516,6 +561,37 @@ a {
 	}
 	.important-things__list {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.top__link {
+		padding: 20px;
+		max-width: 360px;
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer__menu {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 50px;
+		gap: 70px 0;
+		text-align: center;
+		justify-items: center;
+	}
+	.footer__menu-list {
+		width: 220px;
+	}
+	.footer__copy {
+		max-width: 600px;
+	}
+	.copy__nav-list {
+		font-size: 12px;
+	}
+	.why-leasing__item-img {
+		height: 120px;
+	}
+	.why-leasing__item {
+		max-width: 224px;
 	}
 }
 /*----------------------------------------------------*/

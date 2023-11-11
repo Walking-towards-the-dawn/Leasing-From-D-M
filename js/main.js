@@ -22,6 +22,13 @@ function open(event) {
 	document.querySelector(`#${button}`).classList.add('tabs__content-item--active');
 }
 
+const menu = document.querySelector('.menu__list');
+const menuBtn = document.querySelector('.burger__btn');
+
+menuBtn.addEventListener('click', () => {
+	menu.classList.toggle('menu__list--active');
+});
+
 const swiper = new Swiper('.swiper', {
 	effect: 'fade',
 	pagination: {
