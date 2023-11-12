@@ -570,6 +570,23 @@ a {
 }
 
 @media (max-width: 768px) {
+	.top {
+		margin-top: 300px;
+	}
+	.title {
+		font-size: 70px;
+	}
+	.top__link {
+		padding: 16px;
+		max-width: 300px;
+		font-size: 26px;
+	}
+	.swiper-pagination-bullet {
+		width: 60px;
+	}
+	.swiper-pagination-bullet--active {
+		height: 4px;
+	}
 	.footer__menu {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -594,4 +611,66 @@ a {
 		max-width: 224px;
 	}
 }
-/*----------------------------------------------------*/
+
+@media (max-width: 540px) {
+	.burger__btn {
+		width: 34px;
+		height: 24px;
+	}
+	.swiper-pagination-bullet {
+		width: 52px;
+	}
+	.title {
+		font-size: 48px;
+	}
+	.top__link {
+		padding: 12px;
+		max-width: 240px;
+		font-size: 22px;
+	}
+	.why-leasing__item-img {
+		height: 100px;
+	}
+	.why-leasing__item {
+		max-width: 224px;
+	}
+	.why-leasing__list {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 34px 0;
+	}
+	.section-title {
+		font-size: 32px;
+	}
+	.how-does-work__title {
+		font-size: 20px;
+	}
+	.how-it-works__list {
+		padding: 0;
+	}
+	.how-it-works__item {
+		gap: 60px;
+	}
+	.video__content {
+		height: 250px;
+	}
+	.why-leasing {
+		margin-top: 100px;
+	}
+	.how-does-work {
+		margin-top: 100px;
+	}
+	.video {
+		margin-top: 100px;
+	}
+	.important-things {
+		margin: 100px 0;
+	}
+	.footer__menu-list {
+		width: 180px;
+	}
+	.app {
+		gap: 10px;
+		margin-bottom: 25px;
+	}
+}
+/*---------------------------------------------------*/
